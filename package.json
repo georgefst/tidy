@@ -17,7 +17,7 @@
     "start": "vite",
     "test": "vitest run",
     "build:wasm": "cd rust && make build",
-    "build": "npm run build:wasm && vite build && tsc --project ./tsconfig.type.json",
+    "build": "pnpm run build:wasm && vite build && tsc --project ./tsconfig.type.json",
     "doc": "typedoc src/index.ts",
     "release": "yarn build && standard-version",
     "typecheck": "tsc --noEmit",
@@ -73,6 +73,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-use": "^17.4.0",
+    "typescript": "^4.8.4",
     "zrender": "^5.3.1"
   }
 }
